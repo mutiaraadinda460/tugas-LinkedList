@@ -17,7 +17,7 @@ public class Main {
         if (nodeBudi != null) {
             list.insertAfter(nodeBudi, "Eka");
         }
-
+    
         // Print the list after insertAfter
         System.out.println("\nLinked List after inserting Eka after Budi");
         list.printList(); // Expected: Andi -> Budi -> Eka -> Citra -> Dewi -> null
@@ -30,7 +30,7 @@ public class Main {
         list.printList(); // Expected: Andi -> Budi -> Eka -> Dewi -> null
 
         // Delete a non-existent node
-        list.deletedNode("Fajar");
+        list.deleteNode("Fajar");
 
         // print the list after trying to delete non-existent node
         System.out.println("\nLinked List after trying to delete Fajar:");
