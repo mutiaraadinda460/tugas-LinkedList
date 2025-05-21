@@ -1,8 +1,8 @@
 public class DemoKelas {
     public static void main(String[] args) {
-    Siswa endy = new Siswa("Endy", 123);
+    Siswa nisa = new Siswa("Nisa", 123);
 
-    Kelas k = new Kelas(endy);
+    Kelas k = new Kelas(nisa);
 
     Siswa fikri = new Siswa("Fikri", 234);
     k.tambahDibelakang(fikri);
@@ -17,6 +17,12 @@ public class DemoKelas {
 
     k.hapus("Naufal");
     System.out.println("Setelah hapus Naufal:");
+    k.tampilkanSemua();
+
+    k.tambahDidepan(new Siswa("Tiara"));
+    k.tampilkanSemua();
+
+    k.tambahSetelah("Fikri", new Siswa("Manda"));
     k.tampilkanSemua();
     }
 
